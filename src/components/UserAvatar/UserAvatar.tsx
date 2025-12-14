@@ -9,7 +9,7 @@ interface UserAvatarProps {
   scheme?: "accent1" | "transparent";
 }
 
-export const UserAvatar = ({ url, initials, scheme = "transparent", ...rest }: UserAvatarProps) =>
+export const UserAvatar = ({ url, initials, scheme = "primary", ...rest }: UserAvatarProps) =>
   url ? (
     <Avatar.User scheme={scheme} src={url} {...rest} />
   ) : (
