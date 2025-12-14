@@ -1,7 +1,9 @@
 import backgroundArt from "@assets/images/login-background.svg";
-import saleorLogo from "@assets/images/saleor-logo.svg";import { makeStyles, useTheme } from "@saleor/macaw-ui";
-import saleorLogoWhite from "@assets/images/saleor-logo-white.svg";import SVG from "react-inlinesvg";
-
+import saleorLogo from "@assets/images/saleor-logo.svg";
+import saleorLogoWhite from "@assets/images/saleor-logo-white.svg";
+import { makeStyles, useTheme } from "@saleor/macaw-ui";
+import { ReactNode } from "react";
+import SVG from "react-inlinesvg";
 import { useUser } from "..";
 import LoginLoading from "./LoginLoading";b
 
@@ -84,7 +86,7 @@ const Layout = (props: { children: ReactNode }) => {
   return (
     <div className={classes.root}>
       <div className={classes.mainPanel}>
-                  <SVG className={classes.logo} src={themeType === "dark" ? saleorLogoWhite : saleorLogo} />
+                <SVG className={classes.logo} src={themeType === "dark" ? saleorLogoWhite : saleorLogo} />
                   <div className={classes.mainPanelContent}>{children}</div>
       </div>
       <div className={classes.sidebar}>
