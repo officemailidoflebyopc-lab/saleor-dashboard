@@ -1,8 +1,6 @@
 import backgroundArt from "@assets/images/login-background.svg";
-const lebyopcLogo = "https://static.wixstatic.com/media/28cd35_fc07dc978e294088911b1755e1cc078f~mv2.avif/v1/fill/w_192,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Lebyopc_logo_avif.avif";
-import { makeStyles, useTheme } from "@saleor/macaw-ui";
-import { ReactNode } from "react";
-import SVG from "react-inlinesvg";
+import saleorLogo from "@assets/images/saleor-logo.svg";import { makeStyles, useTheme } from "@saleor/macaw-ui";
+import saleorLogoWhite from "@assets/images/saleor-logo-white.svg";import SVG from "react-inlinesvg";
 
 import { useUser } from "..";
 import LoginLoading from "./LoginLoading";b
@@ -86,6 +84,7 @@ const Layout = (props: { children: ReactNode }) => {
   return (
     <div className={classes.root}>
       <div className={classes.mainPanel}>
+                  <SVG className={classes.logo} src={themeType === "dark" ? saleorLogoWhite : saleorLogo} />
                   <div className={classes.mainPanelContent}>{children}</div>
       </div>
       <div className={classes.sidebar}>
