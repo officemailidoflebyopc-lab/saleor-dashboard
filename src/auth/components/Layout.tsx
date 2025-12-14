@@ -86,7 +86,7 @@ const Layout = (props: { children: ReactNode }) => {
   return (
     <div className={classes.root}>
       <div className={classes.mainPanel}>
-                  <img className={classes.logo} src={lebyopcLogo} alt="Lebyopc Logo" />
+          <img className={classes.logo} src={lebyopcLogo} />    
         <div className={classes.mainPanelContent}>{children}</div>
       </div>
       <div className={classes.sidebar}>
