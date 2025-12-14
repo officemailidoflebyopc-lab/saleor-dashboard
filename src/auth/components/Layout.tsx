@@ -1,4 +1,3 @@
-import backgroundArt from "@assets/images/login-background.svg";
 const lebyopcLogo = "https://static.wixstatic.com/media/28cd35_fc07dc978e294088911b1755e1cc078f~mv2.avif/v1/fill/w_192,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Lebyopc_logo_avif.avif";
 import { makeStyles, useTheme } from "@saleor/macaw-ui";
 import { ReactNode } from "react";
