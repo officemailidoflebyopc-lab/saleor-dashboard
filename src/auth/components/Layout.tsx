@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 import SVG from "react-inlinesvg";
 
 import { useUser } from "..";
-import LoginLoading from "./LoginLoading";
+import LoginLoading from "./LoginLoading";b
 
 const useStyles = makeStyles(
   theme => ({
@@ -86,9 +86,7 @@ const Layout = (props: { children: ReactNode }) => {
   return (
     <div className={classes.root}>
       <div className={classes.mainPanel}>
-        <SVG className={classes.logo} src={lebyopcLogo} />
-
-        <div className={classes.mainPanelContent}>{children}</div>
+<img className={classes.logo} src={lebyopcLogo} alt="Lebyopc Logo" />        <div className={classes.mainPanelContent}>{children}</div>
       </div>
       <div className={classes.sidebar}>
         <SVG className={classes.sidebarArt} src={backgroundArt} />
