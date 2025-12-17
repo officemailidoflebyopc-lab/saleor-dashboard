@@ -11,7 +11,7 @@ export const getAppMountUri = () => window?.__SALEOR_CONFIG__?.APP_MOUNT_URI || 
  * The schema version is controlled by the FF_USE_STAGING_SCHEMA feature flag.
  * May be a relative path (e.g., '/graphql/'); use getAbsoluteApiUrl() when a fully qualified URL is required.
  */
-export const getApiUrl = () => "https://mystore-api-92b06062958f.herokuapp.com/graphql/";
+export const getApiUrl = () => "https://mystore-api-eu-3d150af76e78.herokuapp.com/graphql/";
 
 /**
  * Resolves full API URL.
